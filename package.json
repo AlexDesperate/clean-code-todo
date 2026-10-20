@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "format": "prettier --check ."
+    "format": "prettier --check .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
@@ -13,5 +14,9 @@
     "prettier": "^3.0.0",
     "husky": "^9.0.0",
     "lint-staged": "^15.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.{html,css,js}": "prettier --check"
   }
 }
