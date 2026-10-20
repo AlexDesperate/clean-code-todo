@@ -9,13 +9,13 @@ export default [
       sourceType: "module",
       globals: {
         ...globals.browser,
-        ...globals.node
-      }
+        ...globals.node,
+      },
     },
     rules: {
       "no-var": "error",
       "prefer-const": "error",
-      "no-console": "warn"
-    }
-  }
+      "no-console": "warn",
+    },
+  },
 ];
